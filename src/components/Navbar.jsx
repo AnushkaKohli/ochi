@@ -2,8 +2,8 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="fixed z-[999] w-full px-20 py-8 font-neuemontreal flex justify-between items-center">
-      <div className="logo">
+    <nav className="fixed z-[999] w-full px-20 py-6 font-neuemontreal grid grid-cols-12 gap-x-10 items-center">
+      <div className="logo col-span-6">
         <svg
           width="72"
           height="30"
@@ -33,15 +33,15 @@ const Navbar = () => {
           ></path>
         </svg>
       </div>
-      <div className="links flex gap-10">
+      <div className="links col-span-6 flex gap-10">
         {["Services", "Our Work", "About Us", "Insights", "Contact Us"].map(
           (link, index) => {
             return (
               <a
                 key={index}
                 href="#"
-                className={`text-zinc-900 dark:text-zinc-100 capitalize text-lg font-light ${
-                  index === 4 && "ml-32"
+                className={`text-zinc-900 dark:text-zinc-100 capitalize text-md font-light ${
+                  index === 4 && "ml-auto"
                 }`}
               >
                 {link}
@@ -50,7 +50,7 @@ const Navbar = () => {
           }
         )}
       </div>
-    </div>
+    </nav>
   );
 };
 
