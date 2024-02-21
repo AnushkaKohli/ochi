@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="fixed z-[999] w-full px-20 py-6 font-neuemontreal grid grid-cols-12 gap-x-10 items-center">
+    <nav className="fixed z-[999] w-full px-14 py-6 font-neuemontreal grid grid-cols-12 gap-x-10 items-center">
       <div className="logo col-span-6">
         <svg
           width="72"

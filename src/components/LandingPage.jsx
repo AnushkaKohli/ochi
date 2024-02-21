@@ -5,13 +5,13 @@ import ochi from "/assets/images/ochiLandingPage.jpg";
 const LandingPage = () => {
   return (
     <div className="w-full h-screen bg-[#e7e7e7] dark:bg-zinc-900 pt-2">
-      <div className="textstructure mt-44 px-20">
+      <div className="textstructure mt-36 lg:mt-44 px-[4vw]">
         {["We create", "Eye-opening", "Presentations"].map((text, index) => {
           return (
             <div className="masker" key={index}>
               <div className="w-fit flex items-baseline">
                 {index === 1 && (
-                  <div className="mr-[1vw] rounded-md -my-2 w-[8vw] h-[4.8vw] relative">
+                  <div className="mr-[1vw] rounded-md -my-2 w-[12vw] h-[7.6vw] lg:w-[8vw] lg:h-[4.8vw] relative">
                     <img
                       src={ochi}
                       alt="ochi"
@@ -19,7 +19,7 @@ const LandingPage = () => {
                     />
                   </div>
                 )}
-                <h1 className="uppercase text-[7.5vw] font-foundersgrotesk leading-[6vw]">
+                <h1 className="uppercase text-[17vw] md:text-[12vw] lg:text-[7.5vw] font-foundersgrotesk leading-[12vw] md:leading-[9vw] lg:leading-[6vw]">
                   {text}
                 </h1>
               </div>
@@ -27,7 +27,7 @@ const LandingPage = () => {
           );
         })}
       </div>
-      <div className="border-t-[1px] dark:border-[#e7e7e7] border-zinc-800 mt-24 flex flex-col lg:flex-row items-start justify-between lg:items-center py-5 px-20">
+      <div className="border-t-[1px] dark:border-[#e7e7e7] border-zinc-800 mt-24 flex flex-col lg:flex-row items-start justify-between lg:items-center py-5 px-[4vw]">
         {[
           "For public and private companies",
           "From the first pitch to IPO",
