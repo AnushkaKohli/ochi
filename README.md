@@ -32,3 +32,25 @@
     plugins: [],
     };
     ```
+
+## To remove scrollbars :-
+
+1. Add the following to your `index.css`
+
+    ```css
+    @layer utilities {
+        /* Hide scrollbar for Chrome, Safari, and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+        display: none;
+        }
+
+
+        /* Hide scrollbar for IE, Edge, and Firefox */
+        .no-scrollbar {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+        }
+    } 
+    ```
+
+2. Add the class `no-scrollbar overflow-y-auto` where you want to avoid the scollbar.
