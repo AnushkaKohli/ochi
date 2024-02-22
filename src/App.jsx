@@ -5,6 +5,7 @@ import LandingPage from "./components/LandingPage";
 import Marquee from "./components/Marquee";
 import About from "./components/About";
 import AboutAnimate from "./components/AboutAnimate";
+import Eyes from "./components/Eyes";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Marquee />
       <About />
       {/* <AboutAnimate /> */}
+      <Eyes />
     </div>
   );
 }
