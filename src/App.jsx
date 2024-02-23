@@ -6,6 +6,7 @@ import Marquee from "./components/Marquee";
 import About from "./components/About";
 import AboutAnimate from "./components/AboutAnimate";
 import Eyes from "./components/Eyes";
+import Featured from "./components/Featured";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <About />
       {/* <AboutAnimate /> */}
       <Eyes />
+      <Featured />
     </div>
   );
 }
