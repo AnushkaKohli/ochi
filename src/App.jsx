@@ -8,10 +8,11 @@ import AboutAnimate from "./components/AboutAnimate";
 import Eyes from "./components/Eyes";
 import Featured from "./components/Featured";
 import ClientReview from "./components/ClientReview";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="w-full min-h-screen text-zinc-900 dark:text-zinc-100 no-scrollbar overflow-y-auto bg-[#e7e7e7] dark:bg-zinc-900">
+    <div className="w-full min-h-screen text-zinc-900 dark:text-zinc-100 no-scrollbar overflow-y-auto bg-[#f1f1f1] dark:bg-zinc-900">
       <Navbar />
       <LandingPage />
       <Marquee />
@@ -26,6 +27,7 @@ function App() {
         </button>
       </div>
       <ClientReview />
+      <Footer />
     </div>
   );
 }

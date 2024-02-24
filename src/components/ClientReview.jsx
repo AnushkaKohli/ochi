@@ -15,7 +15,7 @@ const ClientReview = () => {
       <div className="table px-[4vw]">Table</div>
 
       {/* Review Cards */}
-      <div className="reviewCard grid gap-3 sm:grid-cols-12 mb-40 lg:mb-48 px-[4vw]">
+      <div className="reviewCard grid gap-3 sm:grid-cols-12 mb-16 lg:mb-24 px-[4vw]">
         {/* Card1 */}
         <div className="h-[55vh] rounded-xl relative bg-[#004d43] text-[#cdea68] col-span-12 lg:col-span-4 xl:col-span-6">
           <div className="absolute left-0 top-0 w-full h-full flex items-center justify-center p-10">
