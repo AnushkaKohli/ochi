@@ -21,7 +21,7 @@ const Featured = () => {
     "https://ochi.design/case/presentation-template-premium_blend/",
   ];
   return (
-    <div className="w-full py-[12vw] md:py-[6vw] rounded-t-2x bg-[#f1f1f1] dark:bg-zinc-900 ">
+    <div className="w-full py-[12vw] md:py-[6vw] rounded-t-2x bg-[#f1f1f1] dark:bg-zinc-900">
       <div className="w-full px-[4vw] border-b-[1px] border-zinc-400 dark:border-zinc-700 pb-[5vw] md:pb-[2vw]">
         <h1 className="text-[5vw] sm:text-[4vw] md:text-[3.4vw] tracking-tight font-neuemontreal">
           Featured Projects
@@ -29,16 +29,18 @@ const Featured = () => {
       </div>
       <div className="cards w-full px-[4vw] grid md:grid-cols-2 gap-x-6 gap-y-14 mt-10">
         {title.map((title, index) => {
-          return (
-            <FeaturedCard
-              key={index}
-              title={title}
-              image={image[index]}
-              buttons={buttons[index]}
-              link={link[index]}
-              direction={index % 2 === 0 ? "left" : "right"}
-            />
-          );
+          {
+            return (
+              <FeaturedCard
+                key={index}
+                title={title}
+                image={image[index]}
+                buttons={buttons[index]}
+                link={link[index]}
+                direction={index % 2 === 0 ? "left" : "right"}
+              />
+            );
+          }
         })}
       </div>
     </div>

@@ -7,6 +7,7 @@ import About from "./components/About";
 import AboutAnimate from "./components/AboutAnimate";
 import Eyes from "./components/Eyes";
 import Featured from "./components/Featured";
+import ClientReview from "./components/ClientReview";
 
 function App() {
   return (
@@ -18,6 +19,13 @@ function App() {
       {/* <AboutAnimate /> */}
       <Eyes />
       <Featured />
+      <div className="bg-[#f1f1f1] flex items-center justify-center">
+        <button className="flex gap-10 items-center px-[3vw] md:px-[2.5vw] lg:px-[2vw] py-[2vw] md:py-[1.5vw] lg:py-[1vw] uppercase bg-[#212121] hover:bg-black rounded-full text-white">
+          View all casestudies
+          <div className="w-2 h-2 bg-white rounded-full"></div>
+        </button>
+      </div>
+      <ClientReview />
     </div>
   );
 }

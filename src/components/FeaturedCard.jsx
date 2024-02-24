@@ -1,8 +1,8 @@
 import React from "react";
-import "./FeaturedCard.css";
 
 const FeaturedCard = (props) => {
   const { title, image, link, buttons, direction } = props;
+  console.log("Direction", direction);
   return (
     <div className="featuredCard">
       <div className="uppercase flex items-center text-sm mb-4">
@@ -11,7 +11,7 @@ const FeaturedCard = (props) => {
       </div>
       <a className="cardContainer mb-6 relative block" href={link}>
         <h1
-          className={`headline ${direction}-full absolute z-2 leading-none tracking-tight text-8xl top-1/2 -translate-x-1/2 -translate-y-1/2 z-2 text-[#cdea68] uppercase font-semibold font-foundersgrotesk whitespace-nowrap`}
+          className={`headline ${direction}-full absolute z-[9] leading-none tracking-tight text-8xl top-1/2 -translate-x-1/2 -translate-y-1/2 z-2 text-[#cdea68] uppercase font-semibold font-foundersgrotesk whitespace-nowrap`}
         >
           {title.split("").map((alphabet, index) => {
             return (
