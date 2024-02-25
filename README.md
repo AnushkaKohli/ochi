@@ -1,5 +1,7 @@
 # Ochi Clone
 
+This is a frontend focused project built using vite+javascript. I have used framer-motion and locomotive scroll for smooth animations. It is a clone of the [ochi]("https://ochi.design/") website. Things that i learnt from this project include:
+
 ## To add fonts to your project :-
 
 1. Download the fonts in your `assets` folder.
