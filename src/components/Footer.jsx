@@ -61,7 +61,7 @@ const Footer = () => {
   return (
     <footer className="footer relative bg-[#f1f1f1] h-full -mb-8">
       {/* Curved border top */}
-      <span className="w-full h-4 absoluterounded-t-full"></span>
+      <span className="w-full h-4 absolute rounded-t-full"></span>
 
       <div className="container px-[4vw]">
         {/* Footer top */}

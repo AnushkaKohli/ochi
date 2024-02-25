@@ -15,7 +15,12 @@ const Eyes = () => {
   });
   return (
     <div className="eyes w-full h-screen overflow-hidden">
-      <div className="relative w-full h-full bg-cover bg-center bg-[url('/assets/images/eyeBackground.jpg')]">
+      <div
+        data-scroll
+        data-scroll-section
+        data-scroll-speed="-.7"
+        className="relative w-full h-full bg-cover bg-center bg-[url('/assets/images/eyeBackground.jpg')]"
+      >
         <div className="absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] flex gap-10">
           {/* First Eye */}
           <div className="w-[25vw] h-[25vw] md:w-[17vw] md:h-[17vw] lg:w-[15vw] lg:h-[15vw] flex items-center justify-center bg-zinc-100 rounded-full">

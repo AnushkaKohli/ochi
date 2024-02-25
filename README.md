@@ -54,3 +54,9 @@
     ```
 
 2. Add the class `no-scrollbar overflow-y-auto` where you want to avoid the scollbar.
+
+## Locomotive Scroll :-
+
+[Locomotive Scroll]("https://scroll.locomotive.ca/docs/#/quickstart") is an opinionated JavaScript library that provides smooth scrolling animations and advanced scroll interactions for web applications. It is designed to create engaging and interactive scrolling experiences with ease. Locomotive Scroll offers features such as smooth scrolling, parallax effects and scroll-based animations.
+
+`npm install locomotive-scroll@beta`

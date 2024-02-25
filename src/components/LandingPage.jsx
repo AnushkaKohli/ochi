@@ -7,7 +7,15 @@ import ochi from "/assets/images/ochiLandingPage.jpg";
 const LandingPage = () => {
   const isLarge = useIsLarge();
   return (
-    <div className="w-full h-screen bg-[#e7e7e7] dark:bg-zinc-900 pt-2">
+    // Data-scroll is a custom attribute that we use to initialize the scroll effect using Locomotive Scroll.
+    <div
+      data-scroll
+      data-scroll-section
+      data-scroll-offset="0, -100%"
+      data-scroll-speed="-.3"
+      data-scroll-position="top"
+      className="w-full h-screen bg-[#e7e7e7] dark:bg-zinc-900 pt-2"
+    >
       <div className="textstructure mt-36 lg:mt-44 px-[4vw]">
         {["We create", "Eye-opening", "Presentations"].map((text, index) => {
           return (

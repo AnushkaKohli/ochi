@@ -10,7 +10,11 @@ import Featured from "./components/Featured";
 import ClientReview from "./components/ClientReview";
 import Footer from "./components/Footer";
 
+import LocomotiveScroll from "locomotive-scroll";
+
 function App() {
+  const locomotiveScroll = new LocomotiveScroll();
+
   return (
     <div className="w-full min-h-screen text-zinc-900 dark:text-zinc-100 no-scrollbar overflow-y-auto bg-[#f1f1f1] dark:bg-zinc-900">
       <Navbar />

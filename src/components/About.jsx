@@ -22,7 +22,12 @@ const About = () => {
     },
   ];
   return (
-    <div className="w-full pt-[6vw] pb-[4vw] bg-[#cdea68] rounded-2xl text-zinc-900">
+    <div
+      data-scroll
+      data-scroll-section
+      data-scroll-speed="-.2"
+      className="is-inview w-full pt-[6vw] pb-[4vw] bg-[#cdea68] rounded-2xl text-zinc-900 relative"
+    >
       <h1 className="font-neuemontreal text-[7vw] md:text-[4vw] leading-[7vw] md:leading-[4vw] font-[1px] tracking-tight px-[4vw]">
         Ochi is a strategic partner for fast-growing tech businesses that need
         to{" "}
