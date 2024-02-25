@@ -24,10 +24,10 @@ function App() {
       {/* <AboutAnimate /> */}
       <Eyes />
       <Featured />
-      <div className="bg-[#f1f1f1] flex items-center justify-center">
-        <button className="flex gap-10 items-center px-[3vw] md:px-[2.5vw] lg:px-[2vw] py-[2vw] md:py-[1.5vw] lg:py-[1vw] uppercase bg-[#212121] hover:bg-black rounded-full text-white">
+      <div className="bg-[#f1f1f1] dark:bg-zinc-900 flex items-center justify-center">
+        <button className="flex gap-10 items-center px-[3vw] md:px-[2.5vw] lg:px-[2vw] py-[2vw] md:py-[1.5vw] lg:py-[1vw] uppercase bg-[#212121] hover:bg-black dark:bg-[#f1f1f1] dark:hover:bg-zinc-300 rounded-full text-white dark:text-zinc-900">
           View all casestudies
-          <div className="w-2 h-2 bg-white rounded-full"></div>
+          <div className="w-2 h-2 bg-white dark:bg-zinc-900 rounded-full"></div>
         </button>
       </div>
       <ClientReview />

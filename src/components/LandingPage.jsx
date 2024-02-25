@@ -1,4 +1,5 @@
 import React from "react";
+import "./animation.css";
 import { motion } from "framer-motion";
 import { GoArrowUpRight } from "react-icons/go";
 import { useIsLarge } from "../hooks/utils";
@@ -63,11 +64,11 @@ const LandingPage = () => {
             </p>
           );
         })}
-        <div className="start flex items-center gap-2">
-          <div className="px-5 py-1 border-[1px] border-zinc-900 dark:border-[#e7e7e7] rounded-full mt-[1.5vw] lg:mt-0 font-normal text-md uppercase">
+        <div className="button-animation start flex items-center gap-2 cursor-pointer">
+          <div className="button-animation-child px-5 py-1 border-[1px] border-zinc-900 dark:border-[#e7e7e7] rounded-full mt-[1.5vw] lg:mt-0 font-normal text-md uppercase">
             Start the project
           </div>
-          <div className="hidden lg:flex lg:items-center md:justify-center">
+          <div className="button-animation-child hidden lg:flex lg:items-center md:justify-center rounded-full">
             <GoArrowUpRight className="rounded-full border-[1px] border-zinc-900 dark:border-[#e7e7e7] w-9 h-9 p-2" />
           </div>
         </div>

@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <nav className="fixed z-[999] w-full px-14 py-6 font-neuemontreal grid grid-cols-12 gap-x-10 items-center">
-      <div className="logo col-span-6">
+      <a href="/" className="logo col-span-6 cursor-pointer">
         <svg
           width="72"
           height="30"
@@ -32,7 +32,7 @@ const Navbar = () => {
             fill="currentColor"
           ></path>
         </svg>
-      </div>
+      </a>
       <div className="links col-span-6 flex gap-10">
         {["Services", "Our Work", "About Us", "Insights", "Contact Us"].map(
           (link, index) => {
@@ -40,7 +40,7 @@ const Navbar = () => {
               <a
                 key={index}
                 href="#"
-                className={`text-zinc-900 dark:text-zinc-100 capitalize text-md font-light ${
+                className={`text-zinc-500 hover:text-zinc-900 dark:text-zinc-100 dark:hover:text-zinc-300 capitalize text-md font-light ${
                   index === 4 && "ml-auto"
                 }`}
               >

@@ -57,7 +57,7 @@ const FeaturedCard = (props) => {
           return (
             <div key={index} className="mr-4 mb-10">
               <a
-                className="button text-zinc-900 border-[1px] font-medium border-zinc-900 px-4 py-2 rounded-full text-sm uppercase"
+                className="button text-zinc-900 dark:text-zinc-100 border-[1px] font-medium border-zinc-900 dark:border-zinc-100 px-4 py-2 rounded-full text-sm uppercase hover:bg-zinc-900 hover:text-white dark:hover:bg-zinc-300/10 transition-all duration-300 ease-in-out cursor-pointer"
                 href=""
               >
                 {button}

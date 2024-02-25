@@ -19,6 +19,12 @@
   will-change: transform;
 }
 
+@media (prefers-color-scheme: dark) {
+  .footer .underline-animation::after {
+    background-color: white;
+  }
+}
+
 .underline-animation:hover::after {
   transform-origin: bottom left;
   transform: scaleX(1);
@@ -45,4 +51,16 @@
 
 .underline-animation:hover::after {
   animation: underline-move 0.5s;
+}
+
+.button-animation {
+  transition-property: color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-text-decoration-color,-webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(.215,.61,.355,1);
+  transition-duration: .3s;
+}
+
+.button-animation:hover .button-animation-child {
+  background-color: #212121;
+  color: #fff;
+  transition: ease-in-out 0.3s;
 }
